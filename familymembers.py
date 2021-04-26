@@ -1,11 +1,11 @@
 class Familymembers:
     def __init__(self):
         self.family = [
-            {"FirstName": "Laura",
+            {"Firstname": "Laura",
              "LastName": "Sorenson",
              "Relationship": "Wife"
             },
-            {"FirstName": "Chase",
+            {"Firstname": "Chase",
              "LastName": "Sorenson",
              "Relationship": "Son"
             },
@@ -22,3 +22,5 @@ class Familymembers:
              "Relationship": "Mother"
             }
         ]
+    def print_family(self):
+        print(self.family)
