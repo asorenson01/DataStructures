@@ -11,6 +11,6 @@ if __name__ == '__main__':
     # test2.add_bday_locations("Skippers", "Chuck E Cheese", "Strip Club")
     # test2.print_locations()
     test3 = Sweepstakes()
-    test3.test_print()
+    test3.sweepstatkes_signup("sixth", "six")
     test3.find_a_winner()
 
