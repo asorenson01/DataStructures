@@ -1,4 +1,5 @@
 class Bdaylocations:
+    # set data structure
     def __init__(self):
         self.locations = {"home", "Red Robbin", "Iraq", "Afghanistan", "In a Helicopter"}
 

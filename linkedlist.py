@@ -21,7 +21,6 @@ class LinkedList:
         node = Node(data)
         node.next = self.head
         self.head = node
-        print("hello world")
 
     def contains_node(self):
         x = self.head

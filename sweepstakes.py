@@ -1,5 +1,5 @@
 import random
-
+# list of dictionarys
 class Sweepstakes:
     def __init__(self):
         self.contestants = [

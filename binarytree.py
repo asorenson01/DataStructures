@@ -22,6 +22,7 @@ class Binarytree:
                 cur_node.right = Tnode(data)
             else:
                 self._insert(data, cur_node.right)
+
     def search(self, data):
         if self.root is not None:
             is_found = self._find(data,self.root)
@@ -30,6 +31,7 @@ class Binarytree:
             return False
         else:
             return None
+
     def _find(self, data, cur_node):
         if data > cur_node.data and cur_node.right is not None:
             return self._find(data, cur_node.right)
