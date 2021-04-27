@@ -33,6 +33,15 @@ if __name__ == '__main__':
     # print("<-------------------------------Hello World--------------------------------------------->")
     # print(linked_list.head.next.next.data)
 
-    root = Binarytree()
-    root.creat_tree(50)
+    tree = Binarytree()
+    tree.add_to_tree(50)
+    tree.add_to_tree(40)
+    tree.add_to_tree(60)
+    tree.add_to_tree(30)
+    tree.add_to_tree(20)
+    print(tree.root.data)
+    print(tree.root.left.data)
+    print(tree.root.right.data)
+    print(tree.root.left.left.data)
+
 
