@@ -38,6 +38,24 @@ class Binarytree:
         if data == cur_node.data:
             return True
 
+    def in_order(self, root):
+        res = []
+        if root is not None:
+            res = self.in_order(root.left)
+            res.append(root.data)
+            res = res + self.in_order(root.right)
+        return res
+
+    def pre_order(self, root):
+        res = []
+        if root is not None:
+            res.append(root.data)
+            res = res + self.pre_order(root.left)
+            res = res + self.pre_order(root.right)
+        return res
+
+
+
 
 
 

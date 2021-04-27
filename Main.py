@@ -33,6 +33,7 @@ if __name__ == '__main__':
     # print(linked_list.head.next.next.data)
 
     tree = Binarytree()
+    tree.add_to_tree(50)
     tree.add_to_tree(40)
     tree.add_to_tree(60)
     tree.add_to_tree(30)
@@ -43,3 +44,5 @@ if __name__ == '__main__':
     tree.add_to_tree(90)
 
     print(tree.search(100))
+    print(tree.in_order(tree.root))
+    print(tree.pre_order(tree.root))
