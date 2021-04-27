@@ -1,5 +1,6 @@
 from tnode import Tnode
 
+
 class Binarytree:
     def __init__(self):
         self.root = None
@@ -25,7 +26,7 @@ class Binarytree:
 
     def search(self, data):
         if self.root is not None:
-            is_found = self._find(data,self.root)
+            is_found = self._find(data, self.root)
             if is_found:
                 return True
             return False
@@ -55,12 +56,3 @@ class Binarytree:
             res = res + self.pre_order(root.left)
             res = res + self.pre_order(root.right)
         return res
-
-
-
-
-
-
-
-
-
