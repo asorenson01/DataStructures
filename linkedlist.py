@@ -25,6 +25,6 @@ class LinkedList:
 
     def contains_node(self):
         x = self.head
-        while x.next:
+        while x.next is not None:
             print(f'{x.data}')
             x = x.next

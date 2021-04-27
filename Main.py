@@ -3,6 +3,7 @@ from bdaylocations import Bdaylocations
 from sweepstakes import Sweepstakes
 from familymembers import Familymembers
 from linkedlist import LinkedList
+from binarytree import Binarytree
 
 if __name__ == '__main__':
     # test1 = Monthsoftheyear()
@@ -19,17 +20,19 @@ if __name__ == '__main__':
     # test4.print_family()
 
 
-    linked_list = LinkedList()
+    # linked_list = LinkedList()
+    #
+    # linked_list.append_node(55)
+    # linked_list.append_node(60)
+    # linked_list.append_node(65)
+    # linked_list.append_node(70)
+    # linked_list.append_node(75)
+    # linked_list.append_node(80)
+    # linked_list.add_to_beginning(30)
+    # linked_list.contains_node()
+    # print("<-------------------------------Hello World--------------------------------------------->")
+    # print(linked_list.head.next.next.data)
 
-    linked_list.append_node(55)
-    linked_list.append_node(60)
-    linked_list.append_node(65)
-    linked_list.append_node(70)
-    linked_list.append_node(75)
-    linked_list.append_node(80)
-    linked_list.add_to_beginning(30)
-    linked_list.contains_node()
-
-    print("Hello World")
-
+    root = Binarytree()
+    root.creat_tree(50)
 
