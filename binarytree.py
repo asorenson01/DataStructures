@@ -8,34 +8,39 @@ class Binarytree:
 
         if self.root is None:
             self.root = Tnode(data)
-            return
-        if self.root.data > data:
-            if self.root.left is None:
-                self.root.left = Tnode(data)
-            else:
-                x = self.root.left
-                if x.data > data:
-                    x.left = Tnode(data)
-
-
-
         else:
-            if self.root.right is None:
-                self.root.right = Tnode(data)
+            self._insert(data, self.root)
+
+    def _insert(self, data, cur_node):
+        if data < cur_node.data:
+            if cur_node.left is None:
+                cur_node.left = Tnode(data)
             else:
-                pass
+                self._insert(data, cur_node.left)
+        elif data > cur_node.data:
+            if cur_node.right is None:
+                cur_node.right = Tnode(data)
+            else:
+                self._insert(data, cur_node.right)
+    def search(self, data):
+        if self.root is not None:
+            is_found = self._find(data,self.root)
+            if is_found:
+                return True
+            return False
+        else:
+            return None
+    def _find(self, data, cur_node):
+        if data > cur_node.data and cur_node.right is not None:
+            return self._find(data, cur_node.right)
+        elif data < cur_node.data and cur_node.left is not None:
+            return self._find(data, cur_node.left)
+        if data == cur_node.data:
+            return True
 
 
-        # if self.root.data > data:
-        #     self.root.right = Tnode(data)
-        # if self.data.data is not None:
-        #     if data < self.data:
-        #         if self.left is None:
-        #             self.left = tnode
-        #         else:
-        #             self.left.add_to_tree(data)
-        # else:
-        #     self.data = tnode
+
+
 
 
 

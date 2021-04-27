@@ -19,7 +19,6 @@ if __name__ == '__main__':
     # test4 = Familymembers()
     # test4.print_family()
 
-
     # linked_list = LinkedList()
     #
     # linked_list.append_node(55)
@@ -34,14 +33,13 @@ if __name__ == '__main__':
     # print(linked_list.head.next.next.data)
 
     tree = Binarytree()
-    tree.add_to_tree(50)
     tree.add_to_tree(40)
     tree.add_to_tree(60)
     tree.add_to_tree(30)
+    tree.add_to_tree(70)
     tree.add_to_tree(20)
-    print(tree.root.data)
-    print(tree.root.left.data)
-    print(tree.root.right.data)
-    print(tree.root.left.left.data)
+    tree.add_to_tree(80)
+    tree.add_to_tree(10)
+    tree.add_to_tree(90)
 
-
+    print(tree.search(100))
